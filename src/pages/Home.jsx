@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaArrowRight } from 'react-icons/fa'
+import { FaArrowRight, FaRegStar } from 'react-icons/fa'
 
 export default function Home() {
   return (
@@ -39,8 +39,25 @@ export default function Home() {
           </div>
         </div>
 
-        <p className='max-w-[1370px] mx-auto lg:text-5xl text-2xl lg:pt-12 pt-8 lg:pb-6 text-center shadow-2xl'>Get difference Product</p>
+        <p className='max-w-[1370px] mx-auto lg:text-5xl text-2xl lg:pt-12 pt-8 lg:pb-6 text-center shadow-2xl mb-7'>Get difference Product</p>
         <div className='bg-gray-50 grid lg:grid-cols-5 grid-cols-1 gap-5'>
+          <ProductItems />
+          <ProductItems />
+          <ProductItems />
+          <ProductItems />
+          <ProductItems />
+          <ProductItems />
+          <ProductItems />
+          <ProductItems />
+          <ProductItems />
+          <ProductItems />
+          <ProductItems />
+          <ProductItems />
+          <ProductItems />
+          <ProductItems />
+          <ProductItems />
+          <ProductItems />
+          <ProductItems />
           <ProductItems />
 
         </div>
@@ -58,15 +75,20 @@ function ProductItems() {
         <p className='text-[19px] font-bold'>Essence Mascara Lash Princess</p>
         <p>Rs 9.99</p>
         <p className='mb-5 mt-2'>Essence</p>
-        <div className='flex'>
+        <div className='flex justify-between'>
           <div className='flex'>
-          <img src="./images/download.svg" alt="" />
-          <img src="./images/download.svg" alt="" />
-          <img src="./images/download.svg" alt="" />
-          <img src="./images/download.svg" alt="" />
-          <img src="./images/download.svg" alt="" />
+            {/* <img className='w-[15px] ' src="./images/download.svg" alt="" />
+            <img className='w-[15px] ' src="./images/download.svg" alt="" />
+            <img className='w-[15px] ' src="./images/download.svg" alt="" />
+            <img className='w-[15px] ' src="./images/download.svg" alt="" />
+            <img className='w-[15px] ' src="./images/download.svg" alt="" /> */}
+            <FaRegStar className='text-yellow-500'/>
+            <FaRegStar className='text-yellow-500'/>
+            <FaRegStar className='text-yellow-500'/>
+            <FaRegStar className='text-yellow-500'/>
+            <FaRegStar className='text-yellow-500'/>
           </div>
-          <button>ADD</button>
+          <button className='bg-blue-600 text-white p-[5px_10px] rounded-xl'>ADD</button>
         </div>
       </div>
     </div>
